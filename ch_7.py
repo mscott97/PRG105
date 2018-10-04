@@ -38,10 +38,17 @@ print(list3)
 # Slice the list days to select from Monday through Friday, inclusive, and assign the new list to work_days
 # print work_days
 
+workDays = ["monday", "tuesday" "Wednesday",
+         "Thursday", "Friday",]
 
+workdays = Work_Days [1:5]
 # TODO 7.4 Finding items in Lists with the in Operator
 # test to see if "Tue" is in the list days, print yes, Tue is in the list or no, Tue is not in the list
 
+if tues not in days:
+   print("tues could not be found in list")
+else:
+    print("Tues is in the list found")
 
 # TODO 7.5 List Methods and Useful Built-in Functions
 # Complete the following code to append the last three months of the year to the list months. Remove
@@ -59,28 +66,34 @@ months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"]
 # delete the number 5 from list 3
 
 # print the maximum item from list 3
-
+# did not really get what you mean by this 
 
 # TODO 7.6 Copying Lists
 # copy the list months to the variable months_of_the_year
 # print the values in months_of_the_year
 
+months_of_the_year = [ january, febuary, march, april, may, june, july, aug, octuber, nov, dec, ]
 
-# TODO 7.7 Processing lists
+list2 = months_of_the_year
+
+# TODO 7.7 Processing lists]
 # total the values in list3 and print the results
 
 # get the average of values in list 3 and print the results
 
 # open the file states in read mode, read the contents of the file into the list states_list and print the
 # contents of states_list on screen
-
+# dont understand
 
 # TODO 7.8 Two-Dimensional Lists
 # Create a two dimensional list that has the months of the year and the days in each month during a non leap year
 # print the contents of the list
+
+#do not understand 
 
 
 # print just the values for index 3,0 and 3,1
 
 # TODO 7.9 Tuples
 # convert the months list to a tuple
+# help
