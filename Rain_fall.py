@@ -12,8 +12,8 @@ for currentYear in range(1, userNumberOfYears + 1):
         totalNumberOfMonths += 1
 averageRainfall = TotalInchesOfRainfall / totalNumberOfMonths
 
-print ()
+print()
 
-print ("Number of months" + format(totalNumberOfMonths, "d", ), "total" +
-       "inches of rainfall" + format(TotalInchesOfRainfall, ".2f"),
-       "Average rainfall " + format(averageRainfall, ".2f"),)
+print("Number of months" + format(totalNumberOfMonths, "d", ), "total" +
+      "inches of rainfall" + format(TotalInchesOfRainfall, ".2f"),
+      "Average rainfall " + format(averageRainfall, ".2f"), )
