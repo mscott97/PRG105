@@ -1,13 +1,14 @@
 numberOfDaysWorked = int(input("Please enter how many days you worked ?"))
-totalNumberOfpennies = 0
+totalNumberOfPennies = 0
+
 print()
 
 print("day\tSalary\n----\t----")
-for currentDay in range(numberOfDaysWorked):
-    penniesForTheday = 2 ** currentDay
-totalNumberOfpennies += penniesForTheday
-print(currentDay + 1,"\t", penniesForTheday)
+for  currentDay in range(numberOfDaysWorked ):
+    PenniesForTheDay = 2 ** currentDay
+    totalNumberOfPennies += PenniesForTheDay
+    print(currentDay + 1,"\t",PenniesForTheDay )
 
-totalPay = totalNumberOfpennies * 0.01
+totalPay = totalNumberOfPennies * 0.01
 
-print("/Total pay = $, totalPay sep =")
+print("\nTotal pay: $", totalPay,)
