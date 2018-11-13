@@ -1,30 +1,27 @@
-def calculatecaloriesfromfat(fatgrams):
-    caloriesfromfat = fatgrams * 9
-    return caloriesfromfat
+def calculate_calories_from_fat(fatgrams):
+    calories_from_fat = fatgrams * 9
+    return calories_from_fat
 
 
-def calculatecaloriesfromcrabs(crabsgrams):
-    caloriesfromcrabs = crabsgrams * 4
-    return caloriesfromcrabs
+def calculate_calories_from_crabs(crabsgrams):
+    calories_from_crabs = crabsgrams * 4
+    return calories_from_crabs
 
 
-def calculatecaloriesfromprotein(proteingrams):
-    caloriesfromprotein = proteingrams * 4
-    return caloriesfromprotein
+def calculate_calories_from_protein(proteingrams):
+    calories_from_protein = proteingrams * 4
+    return calories_from_protein
 
 
 def main():
-    userfatgrams = float(input("Enter Fat Grams"))
-    usercrabsgrams = float(input("Enter Crabs Grams"))
-    userproteingrams = float(input("Enter Protein Grams"))
+    user_fat_grams = float(input("Enter Fat Grams"))
+    user_crabs_grams = float(input("Enter Crabs Grams"))
+    user_protein_grams = float(input("Enter Protein Grams"))
 
-    caloriesfromfat = calculatecaloriesfromfat(userfatgrams)
-    caloriesfromcrabs = calculatecaloriesfromcrabs(usercrabsgrams)
-    caloriesfromprotein = calculateCaloriesfromprotein(userproteingrams)
+    calories_from_fat = calculate_calories_from_fat(user_fat_grams)
+    calories_from_crabs = calculate_calories_from_crabs(user_crabs_grams)
+    calories_from_protein = calculate_calories_from_protein(user_protein_grams)
 
-    print("\nCalories from Fat" + format(caloriesfromfat, ".2f") + "calories", "calories from Crabs:" +
-          format(caloriesfromcrabs, ".2f") + "calories",)
-    format(caloriesfromprotein, ".2f") + "calories", "calories from Protien:"
-
-
-main()
+    print("\nCalories from Fat" + format(calories_from_fat, ".2f") + "calories", "calories from Crabs:" +
+          format(calories_from_crabs, ".2f") + "calories",)
+    format(calories_from_protein, ".2f") + "calories", "calories from Protien:"
