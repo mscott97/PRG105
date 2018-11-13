@@ -1,0 +1,10 @@
+def main():
+  names_flie = open("names.txt", "r")
+  
+  line = names_flie.readline()
+  
+  while line != "":
+    print(line.rstrip("\n"))
+    line = names_flie.readline()
+
+main()
