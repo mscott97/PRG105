@@ -1,0 +1,34 @@
+import pickle
+
+
+def main():
+    # declare variable
+    customers = get_info()
+    choice = menu()
+    if choice == "add":
+        lookup(customers)
+    elif choice == "update":
+        add(customers)
+    elif choice == "remove":
+        delete(customers)
+    elif choice == "quit":
+        print("goodbye")
+    else:
+        print("not vaild entry")
+        menu()
+    if choice != "quit"
+        main()
+
+
+def get_info():
+
+
+# get file, unpickle, store in dictionary
+try:
+    customer_file  = open('customers.dat','rb')
+    customer_dictionary = pickle.load(customer_file)
+    customer_file.close()
+    print(customer_dictionary)
+except FileNotFoundError:
+    customer_dictionary =()
+    
