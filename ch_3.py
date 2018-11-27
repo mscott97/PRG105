@@ -21,6 +21,11 @@ a = 6
 b = 8
 c = 5
 
+print(b > a)
+print(a == b)
+print(c != a)
+print(c <= a)
+
 # TODO 3.2 the if else statement
 # add code below to determine if age is greater than or equal to
 # 18. Depending on the answer, display the appropriate statement:
@@ -40,7 +45,11 @@ else:
 
 password = "narwhals"
 user_password = input("Please enter the password:  ")
-if password
+if user_password == password:
+    print("username accepted")
+else:
+    print("Wrong password")
+
 # TODO 3.4 if - elif - else
 # write code that accepts a number from between 1 and 5 from the user
 # and returns a roman numeral for that number. If the number entered is
@@ -48,16 +57,31 @@ if password
 # valid number"
 
 number = int(input("Please enter a number between 1 and 5: "))
-
+if number == 1:
+    print('accepted.')
+elif number == 2:
+    print('accepted..')
+elif number == 3:
+    print('accepted.')
+elif number == 4:
+    print('accepted..')
+elif number == 5:
+    print('accepted..')
+else:
+    print('not the right number..')
 # TODO 3.5 a series of conditions
 # Buffet prices are based on the persons age. If the person is a senior
 # citizen (62 or over) , the charge is $9.89. If the person is age 12-
 # 61, the charge is $12.89. If it is a child of under age 3, they eat
 # for free. If the child is between 4 and 12 they are charged $0.99 for
 # each year of age. Complete the program below.
-
+""""""
 customer_age = int(input("How old is the customer?   "))
-cost = 0  # initializing cost, assign the correct price to this variable
+senior = 9.98  # initializing cost, assign the correct price to this variable
+middle_age = 12.89
+child_under_three = 0.00
+child_under_four = 0.99
+
 
 
 # complete the program here
@@ -81,5 +105,3 @@ f = 12
 # if it is hungry, it will cry. You will print  "Eyes open" or "Eyes closed" depending
 # on the tired value. You will print "Crying" or "quiet" depending on the hungry variable
 
-tired = True
-hungry = False
