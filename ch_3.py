@@ -86,6 +86,17 @@ child_under_four = 0.99
 
 # complete the program here
 
+if customer_age == > :
+    print('9.98.')
+elif number == 2:
+    print('accepted..')
+elif number == 3:
+    print('accepted.')
+elif number == 4:
+    print('accepted..')
+elif number == 5:
+    print('accepted..')
+
 # output, correctly formatted:
 print("Your cost for a customer who is " + str(customer_age) + " years old")
 print("is $" + format(cost, ",.2f"))
@@ -100,8 +111,19 @@ d = 10
 e = 10
 f = 12
 
+print(d and e)
+print(d or e)
+print(f not e)
+
+
 # TODO 3.6 Boolean variable
 # You are programming a baby doll. If they baby doll is tired, it will close its eyes
 # if it is hungry, it will cry. You will print  "Eyes open" or "Eyes closed" depending
 # on the tired value. You will print "Crying" or "quiet" depending on the hungry variable
 
+if baby_doll_tried == True 
+   print("Eyes closed")
+    
+    
+else: 
+    print("Eyes open")
