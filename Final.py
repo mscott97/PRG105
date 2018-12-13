@@ -3,7 +3,7 @@ import tkinter.messagebox
 import pickle
 
 
-class CrudGUI:
+class MainGUI:
     def __init__(self, master):
         self.master = master
         self.master.title('FINAL THE RolePlaying GAME')
@@ -35,15 +35,13 @@ class CrudGUI:
         self.top_frame.pack()
         self.bottom_frame.pack()
 
-    def open_menu(self):
+def open_menu(self):
         if self.radio_var.get() == 1-3:
             search = FightGUI(self.master)
         elif self.radio_var.get() == 2:
             search = ItemGUI(self.master)
         elif self.radio_var.get() == 3:
             search = TalkGUI(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
 
 class FightGUI:
     def __init__(self, master):
@@ -85,21 +83,19 @@ class FightGUI:
         self.middle_frame.pack()
         self.bottom_frame.pack()
 
-    def open_menu5(self):
-        if self.radio_var.get() == 1:
-            search = goodlookingGUI(self.master)
-        elif self.radio_var.get() == 2:
-            search = pleaseGUI(self.master)
-        elif self.radio_var.get() == 3:
-            search = Comeon(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
+def open_menu5(self):
+    if self.radio_var.get() == 1:
+        search = goodlookingGUI(self.master)
+    elif self.radio_var.get() == 2:
+        search = pleaseGUI(self.master)
+    elif self.radio_var.get() == 3:
+        search = Comeon(self.master)
 
-    def open_menu2(self):
+
+def open_menu2(self):
         if self.radio_var.get() == 1:
-            search = HitGUIGUI(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
+            search = HitGUI(self.master)
+
 
 class TalkGUI:
     def __init__(self, master):
@@ -261,19 +257,16 @@ class BaddogdeGUI:
         self.middle_frame.pack()
         self.bottom_frame.pack()
 
-    def open_menu6(self):
-        if self.radio_var.get() == 1:
-            search = doingwellGUI(self.master)
-        elif self.radio_var.get() == 2-3:
-            search = Badtalkself(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
+def open_menu6(self):
+    if self.radio_var.get() == 1:
+        search = doingwellGUI(self.master)
+    elif self.radio_var.get() == 2-3:
+        search = Badtalkself(self.master)
 
-    def open_menu7(self):
-        if self.radio_var.get() == 1:
-            search = Coffe(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
+def open_menu7(self):
+    if self.radio_var.get() == 1:
+        search = Coffe(self.master)
+
 class PleaseGUI:
     def __init__(self, master):
 
@@ -362,8 +355,6 @@ def open_menu4(self):
             search = Gooddodge1(self.master)
         elif self.radio_var.get() == 2-3:
             search = BaddogdeGUI2(self.master)
-        else:
-            tkinter.messagebox.showinfo('Function', 'still under construction')
 
 class Baddogde2GUI:
     def __init__(self, master):
@@ -412,7 +403,7 @@ def main():
     # create a window
     root = tkinter.Tk()
     # call the GUI and send it the root menu
-    menu_gui = CrudGUI(root)
+    menu_gui = MainGUI(root)
     # control the mainloop from main instead of the class
     root.mainloop()
 
