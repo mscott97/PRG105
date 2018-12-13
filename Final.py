@@ -35,7 +35,7 @@ class MainGUI:
         self.top_frame.pack()
         self.bottom_frame.pack()
 
-def open_menu(self):
+    def open_menu(self):
         if self.radio_var.get() == 1-3:
             search = FightGUI(self.master)
         elif self.radio_var.get() == 2:
@@ -83,16 +83,16 @@ class FightGUI:
         self.middle_frame.pack()
         self.bottom_frame.pack()
 
-def open_menu5(self):
-    if self.radio_var.get() == 1:
-        search = goodlookingGUI(self.master)
-    elif self.radio_var.get() == 2:
-        search = pleaseGUI(self.master)
-    elif self.radio_var.get() == 3:
-        search = Comeon(self.master)
+    def open_menu5(self):
+        if self.radio_var.get() == 1:
+            search = goodlookingGUI(self.master)
+        elif self.radio_var.get() == 2:
+            search = pleaseGUI(self.master)
+        elif self.radio_var.get() == 3:
+            search = Comeon(self.master)
 
 
-def open_menu2(self):
+    def open_menu2(self):
         if self.radio_var.get() == 1:
             search = HitGUI(self.master)
 
@@ -394,7 +394,9 @@ class Baddogde2GUI:
         self.top_frame.pack()
         self.middle_frame.pack()
         self.bottom_frame.pack()
-
+        
+class goodlookingGUI:
+    
 
 def back(self):
         self.look.destroy()
