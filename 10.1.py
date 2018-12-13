@@ -1,5 +1,3 @@
-# Program 10-13
-# This program manages Contacts.
 
 import contact
 import pickle
