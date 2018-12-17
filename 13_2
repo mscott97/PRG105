@@ -1,0 +1,49 @@
+import pickle
+import tkinter
+import tkinter.messagebox
+
+# Items and Products define
+class MenuGUI:
+    def __init__(self, master):
+        self.master = master
+        self.master.title('walmart')
+        self.grapes = tkinter.Button(self.bottom_frame, text='grapes', command=self.calculate_price)
+        self.apples = tkinter.Button(self.bottom_frame, text='apples', command=self.apples)
+        self.eggs = tkinter.Button(self.bottom_frame, text='eggs', command=self.eggs)
+        self.tacos = tkinter.Button(self.bottom_frame, text='tacos', command=self.tacos)
+        self.mayo_bottle = tkinter.Button(self.bottom_frame, text='mayo_bottle', command=self.mayo_bottle)
+        self.eggs = tkinter.Button(self.bottom_frame, text='eggs', command=self.eggs)
+        self.butter = tkinter.Button(self.bottom_frame, text='butter', command=self.butter)
+        self.flour = tkinter.Button(self.bottom_frame, text='flour', command=self.flour)
+
+
+class Counter:
+    def __init__(self):
+        self.count = 0
+    def butter(self):
+        self.count += 18.50
+    def eggs(self):
+        self.count += 30.00
+    def grapes(self):
+        self.court += 25.00
+    def tacos(self):
+        self.count += 15.00
+    def flour(self):
+        self.count += 10.00
+    def apples(self):
+        self.count += 5.00
+    def mayo_bottle(self):
+        self.count += 3.00
+    def tacos(self):
+        self.count += 7.75
+
+def main():
+        # create a window
+        root = tkinter.Tk()
+        # call the GUI and send it the root menu
+        menu_gui = CrudGUI(root)
+        # control the mainloop from main instead of the class
+        root.mainloop()
+
+
+main()
